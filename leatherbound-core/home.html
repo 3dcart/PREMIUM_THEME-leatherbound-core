@@ -1,0 +1,244 @@
+<section id="home" class="home-page-content page-content">
+        <!--START: home_carousel-->
+        <section class="homepage-slider">
+        
+            <div class="homeCarousel flexslider" data-animation="[hc_effect]" data-slideshowspeed="[hc_delay]">
+                <script>
+                        //Slide JSON format
+                        /* 
+                        {                          
+                        "background_color": "#eceded",                          
+                        "background_image": "/assets/templates/leatherbound-core/images/slider-main.jpg",                          
+                        "button_link": "#",                         
+                        "button_text": "Shop Now",                                                
+                        "heading": "Durable Journals",                          
+                        "text_color": "#000000"                      
+                        }
+                        */
+    
+                        var slides = '[';
+                        //<!--START: carousel-->
+                        slides += '[image],'
+                        //<!--END: carousel-->
+    
+                        //remove last comma (,)
+                        slides = slides.substring(0, slides.length - 1);
+    
+                        slides = slides + ']';
+                </script>
+    
+                <div id="hp-slide-format" class="hidden">
+                    <div class="container-fluid">
+                        <div class="row hp-slide-content">
+                            <div class="col-md-12">
+                                <div class="hp-slider-text-outer">
+                                    <div class="hp-slider-text">
+                                        <div class="text-border">
+                                            <div class="text-border-inner">
+                                                <h3></h3>
+                                                <div class="hp-slider-cta">
+                                                    <a href="" class="btn btn-primary"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6"></div>
+                        </div>
+                    </div>
+                </div>
+    
+                <ul id="hp-slides" class="slides"></ul>
+            </div>
+        </section>
+        <!--END: home_carousel-->
+
+
+    <!--START: CATEGORY_HEADER-->
+    <div class="container">
+        <section class="category-header">[CONTENT]</section>
+    </div>
+    <!--END: CATEGORY_HEADER-->
+
+    <section class="products-section wow fadeInUp">
+        <div class="container-fluid">
+            <!--START: FEATURE_MENU-->
+            <h2 class="header-specials">[category_Header-specials]</h2>
+
+            <!--START: CATEGORY_ITEMS-->
+            <div class="product-items pl-4 pr-4 product-items-[product-cols-number]">
+                <!--START: ITEM_TEMPLATE_0-->
+                [product_items]
+                <!--END: ITEM_TEMPLATE_0-->
+            </div>
+            <!--END: CATEGORY_ITEMS-->
+            <!--END: FEATURE_MENU-->
+        </div>
+    </section>
+
+    <div class="hp-brands-slider">
+        <div class="container-fluid">
+            <div class="col-md-4 revealOnScroll" data-animation="fadeInLeft" data-timeout="500">
+                <div class="bottom-banner-item">
+                    <a href="#">
+                        <img src="/assets/templates/Leather-Bound-core-Premium/images/bottom-banner1.jpg" alt="" class="img-responsive">
+                        <h3>Classic<span>Design</span><p>Shop Now</p></h3>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 revealOnScroll" data-animation="fadeInUp" data-timeout="500">
+                <div class="bottom-banner-item">
+                    <a href="#">
+                        <img src="/assets/templates/Leather-Bound-core-Premium/images/bottom-banner2.jpg" alt="" class="img-responsive">
+                        <h3>Various<span>Sizes</span><p>Shop Now</p></h3>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="bottom-banner-item revealOnScroll" data-animation="fadeInRight" data-timeout="500">
+                    <a href="#">
+                        <img src="/assets/templates/Leather-Bound-core-Premium/images/bottom-banner3.jpg" alt="" class="img-responsive">
+                        <h3>Useful<span>Planners</span><p>Shop Now</p></h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <section class="home-category-header">
+        <div class="container-fulid">
+            <div class="col-sm-4 homepage-category revealOnScroll" data-animation="fadeInLeft" data-timeout="500">
+                <a href="#">Gift Ideas</a>
+            </div>
+            <div class="col-sm-4 homepage-category revealOnScroll" data-animation="fadeInUp" data-timeout="500">
+                <a href="#">About Us</a>
+            </div>
+            <div class="col-sm-4 homepage-category revealOnScroll" data-animation="fadeInRight" data-timeout="500">
+                <a href="#">Journal Brands</a>
+            </div>
+        </div>
+    </section> -->
+
+
+    <section class="home-category-footer">
+        <div class="container-fluid ml-4 mr-4">
+
+        <div class="hp-full-banner ml-3 mr-3" style="background-image: url(/assets/templates/Leather-Bound-core-Premium/images/bottom-full-width-banner.jpg);">
+            <div class="container-fluid">
+                <div class="hp-full-banner-text revealOnScroll" data-animation="fadeIn" data-timeout="500">
+                    <h2><span>Pen & Journal</span> Combos</h2>
+                    <!-- <div class="hp-full-banner-cta">
+                        <a href="https://www.shophornetoutdoors.com/Cargo-Racks_c_53.html" class="btn">Shop Now</a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="hp-brands-slider">
+            <div class="container-fluid p-0">
+                <div class="row">
+                    <div class="col-md-4 revealOnScroll" data-animation="fadeInLeft" data-timeout="500">
+                        <div class="bottom-banner-item">
+                            <a href="#">
+                                <img src="/assets/templates/Leather-Bound-core-Premium/images/gift-ideas.jpg" alt="" class="img-responsive">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 revealOnScroll" data-animation="fadeInUp" data-timeout="500">
+                        <div class="bottom-banner-item">
+                            <a href="#">
+                                <img src="/assets/templates/Leather-Bound-core-Premium/images/about-us.jpg" alt="" class="img-responsive">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="bottom-banner-item revealOnScroll" data-animation="fadeInRight" data-timeout="500">
+                            <a href="#">
+                                <img src="/assets/templates/Leather-Bound-core-Premium/images/journal-brands.jpg" alt="" class="img-responsive">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+        </div>
+    </section>
+
+</section>
+
+<!--START: CATEGORY_FOOTER-->
+<div class="container-fluid">
+    <section class="category-footer">[CONTENT]</section>
+</div>
+<!--END: CATEGORY_FOOTER-->
+
+</section>
+
+<!--START: template_scripts-->
+<script type="text/javascript" src="/assets/templates/common-core/lib/flexslider/jquery.flexslider-min.js"></script>
+<script type="text/javascript" charset="utf-8">
+    jQuery(function () {
+
+        var slidesJson = jQuery.parseJSON(slides);
+        jQuery(slidesJson).each(function (i, element) {
+            var slideItem = jQuery("<li></li>");
+            var slideFormat = jQuery('#hp-slide-format > div').clone();
+
+            jQuery(slideItem).css('background-image', 'url('+element.background_image+')');
+            jQuery(slideItem).css('background-color', element.background_color);
+            jQuery(slideFormat).find('.hp-slider-text').css('color', element.text_color);
+
+            jQuery(slideFormat).find('.hp-slider-text h3').html(element.heading);
+            jQuery(slideFormat).find('.hp-slider-text p').html(element.details);
+            jQuery(slideFormat).find('.hp-slider-cta a').attr('href', element.button_link);
+            jQuery(slideFormat).find('.hp-slider-cta a').html(element.button_text);
+            //jQuery(slideFormat).find('.hp-slider-img').append('<img src=' + element.front_image + ' alt="" />');
+    
+            jQuery(slideItem).append(slideFormat);
+
+            jQuery('#hp-slides').append(slideItem);
+        });
+
+        jQuery('.homeCarousel').flexslider({
+            animation: jQuery('.homeCarousel').attr('data-animation'),
+			slideshow: true,
+            slideshowSpeed: jQuery('.homeCarousel').attr('data-slideshowspeed'),
+            controlNav: false,
+            keyboard: false
+        });
+
+        var $window = jQuery(window),
+		flexslider = { vars: {} };
+
+        // tiny helper function to add breakpoints
+        function getGridSize() {
+            return (window.innerWidth <= 567) ? 1 :
+                   (window.innerWidth < 992) ? 2 : 4;
+        }
+
+        $window.on("load", function () {
+            jQuery('.hp-brands-flexslider').flexslider({
+                animation: "slide",
+                controlNav: false,
+                keyboard: false,
+                itemWidth: 210,
+                itemMargin: 0,
+                minItems: getGridSize(), // use function to pull in initial value
+                maxItems: getGridSize() // use function to pull in initial value
+            });
+
+            setTimeout(function () {
+                window.dispatchEvent(new Event('resize'));
+            }, 100);
+        });
+    });
+</script>
+<!--END: template_scripts-->
+
+
+<!--START: template_styles-->
+<link rel="stylesheet" href="/assets/templates/common-core/lib/flexslider/flexslider.css" type="text/css" media="screen" />
+<!--END: template_styles-->
