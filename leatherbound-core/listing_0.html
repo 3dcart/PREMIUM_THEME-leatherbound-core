@@ -619,6 +619,11 @@
                                 <label class="qty-format"><input type="text" size="3" name="text[oname]" value="0" class="form-control customoption" /></label>
                                 <label for="text[oname]" class="qty-format-label">[value] [oprice]</label>
                                 <!--END: qty-format-->
+								<!--START: mixedpack-format-->
+                                <label class="qty-format"><input type="text" size="3" name="text[oname]" value="0" data-feature_extra-price="[oname4]" class="form-control customoption qty-mixedpack-[oname3]"/></label>
+                                <label for="text[oname]" class="qty-format-label">[value] [oprice]</label>
+                                <input type="hidden" name="cb[oname2]" value="[value]" />
+                                <!--END: mixedpack-format-->
                                 <!--START: file-format-->
                                 <div class="file-format form-group">
                                     <label for="file[oname]">[value]: [oprice]</label>
