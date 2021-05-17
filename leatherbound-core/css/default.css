@@ -4,11 +4,25 @@
 
 body {
 	font-family: 'Nunito', sans-serif;
-    color: #000;
+    color: #000;background: transparent;
 	line-height: 1.5;
     padding-top:0px;
 }
-
+#skip a
+{
+position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;
+}
+#skip a:focus
+{
+position:static;
+width:auto;
+height:auto;
+}
 img {
     max-width: 100%;
 }
@@ -206,12 +220,12 @@ h1 {
     text-transform: uppercase;
     font-weight: 600;
     font-family: 'Playfair Display', serif;
-    color: #fff;
+    color: #fff;background: transparent !important;
     text-align: left;
 }
 .hp-full-banner-text h2 span {
     display: block;
-    color: #fff;
+    color: #fff;background: transparent!important;
     font-family: 'Nunito', sans-serif;
     font-weight: 300;
     font-size: 35px;
@@ -253,7 +267,7 @@ h1 {
     margin: 0 auto;
     border-bottom: none;
 }
-.bottom-banner-item a h3 {
+.bottom-banner-item a h3,.bottom-banner-item a h2 {
     text-align: left;
     padding: 10px;
     font-size: 40px;
@@ -273,13 +287,13 @@ h1 {
     font-family: 'Playfair Display', serif;
     max-width: 320px;
 }
-.bottom-banner-item a h3 span {
+.bottom-banner-item a h3 span,.bottom-banner-item a h2 span {
     display: block;
     text-transform: uppercase;
     font-size: 3.2vw;
     font-weight: 600;
 }
-.bottom-banner-item a h3 p {
+.bottom-banner-item a h3 p,.bottom-banner-item a h2 p {
     font-family: 'Nunito', sans-serif;
     background: #6a2727;
     text-transform: uppercase;
@@ -676,7 +690,7 @@ ul.extrapages li a {
 .copyright_txt {
     padding: 10px 0;
     text-align: center;
-    color: #fff;
+    color: #000;
 }
 
 
@@ -788,7 +802,7 @@ ul.social-icons li.social-icons-label {
     text-align: left;
     margin: 0 auto 30px;
 }
-.social-icons h3 {
+.social-icons h3,.social_icons h3{
     margin: 0 0 15px;
     text-transform: uppercase;
     font-weight: 800;
@@ -822,7 +836,9 @@ ul.social-icons li.social-icons-label {
 .reviews-stars {
     color: #fadb01;
 }
-
+.sidebar-widget .product-item .name a.link,.sidebar-widget .product-item .price,.sidebar-widget .product-item span.reviews-count{
+    color: #fff;    
+}
 .product-items {
     overflow: hidden;
 }
@@ -846,6 +862,9 @@ ul.social-icons li.social-icons-label {
 }
 .product-item del.regular-price {
     text-decoration: line-through;
+}
+.products-section .sale-price {
+    color: #584B32;
 }
 .sale-price {
     color: #bca483;
@@ -922,7 +941,7 @@ span.freeshipping {
     background-color: #fff;
     padding: 30px 0 0;
 }
-.products-section h2 {
+.products-section h2,.products-section h1 {
     text-align: center;
     font-size: 30px;
     line-height: 1.35;
