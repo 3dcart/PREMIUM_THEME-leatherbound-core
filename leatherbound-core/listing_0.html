@@ -1345,50 +1345,38 @@
 				</button>
 			</div>
 		</div>
-		<div class="product-carousel flexslider">
-			<!--START: browsing_history_items-->
-			<ul class="product-items product-items-[product-cols-number] slides">
+		<div class="product-carousel flexslider" role="region" aria-label="Browsing History carousel">
+			<ul class="product-items slides" data-ajax-browsinghistory>
 				<!--START: browsing_history_item-->
-				<li class="product-item" data-catalogid="[catalogid]" data-ajaxcart="1" data-addcart-callback="addcart_callback">
+				<li class="product-item [onsale_item]" data-catalogid="[catalog_id]" data-ajaxcart="1" data-addcart-callback="addcart_callback">
 					<div class="img">
-						<a href="product.asp?itemid=[catalogid]">
-							<img src="[THUMBNAIL]" alt="[name]" class="img-responsive" />
+						<a href="product.asp?itemid=[catalog_id]">
+							<img src="assets/templates/common-core/images/spacer.gif" alt="[name]" class="img-responsive" />
 						</a>
-						<!--START: quickview-->
-						<button class="quickview" data-toggle="modal">Quick View</button>
-						<!--END: quickview-->
 					</div>
 					<div class="name">
-						<a href="product.asp?itemid=[catalogid]">[name]</a>
+						<a href="product.asp?itemid=[catalog_id]">[history_item_name]</a>
 					</div>
 
-					<div class="price">
-						<!--START: ITEMPRICE-->
-						<span class="regular-price" aria-label="regular price">[ITEMPRICE]</span>
-						<!--END: ITEMPRICE-->
-						<!--START: SALEPRICE-->
-						<del class="regular-price" aria-label="regular price">[ITEMPRICE]</del>
-						<span class="sale-price" aria-label="sale price">[ITEMSALEPRICE]</span>
-						<span class="on-sale-badge" aria-label="sale badge">[product_sale]</span>
-						<!--END: SALEPRICE-->
-					</div>
+						<div class="price">
+							<!--START: ITEMPRICE-->
+							<span class="regular-price">[ITEMPRICE]</span>
+							<!--END: ITEMPRICE-->
+							<!--START: SALEPRICE-->
+							<del class="regular-price">[ITEMPRICE] <span class="sr-only">Original price</span></del>
+							<span class="sale-price">[ITEMSALEPRICE]</span>
+							<span class="on-sale-badge">[product_sale]</span>
+							<!--END: SALEPRICE-->
+						</div>
 
-					<div class="reviews">
-						<!--START: product_review-->
-						<!--START: product_review_average-->
-						<span class="reviews-stars rating-[review_average]" role="presentation"></span> <span class="reviews-count" role="presentation">([review_count])</span>
-						<!--END: product_review_average-->
-						<!--END: product_review-->
-					</div>
 					<div class="action">
-						<a href="product.asp?itemid=[item_id]&delhist=[catalogid]" class="btn btn-default">
+						<a href="product.asp?itemid=[catalogid]&delhist=[catalog_id]" class="btn btn-default">
 							Clear
 						</a>
 					</div>
 				</li>
 				<!--END: browsing_history_item-->
 			</ul>
-			<!--END: browsing_history_items-->
 		</div>
 	</div>
 </section>
